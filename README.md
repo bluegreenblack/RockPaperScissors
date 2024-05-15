@@ -4,19 +4,18 @@ Requires .NET 8 to build.
 
 To build `dotnet build`
 
-To run use `dotnet run`
+To run use `dotnet run --project RockPaperScissors`
 
 To run tests use `dotnet test`
 
+### Design and assumptions made.
 
-### Design
+Choose mappings for calculating matchups - more flexible for both standard and lizard spock game modes.
 
-#### Calculating wins/losses/ties: Add and modulo or mappings?
+Chose a best of 5 game mode.
 
-Mappings simpler / more flexible in the future.
-Can use list or dictionary.
+### Possible further work
 
-#### Turns to win. Best of 3 or Best of 5?
-
-Best of 5 - Assuming draws do not count towards total rounds
+Abstract the opponent choice strategy into an interface class
+e.g. RandomChoiceStrategy or PreviousMoveStrategy
 
