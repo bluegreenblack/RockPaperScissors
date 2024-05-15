@@ -53,7 +53,7 @@ internal class Program
             }
 
             Choice playerChoice = choices[result - 1];
-            Choice computerChoice = (Choice) Random.Shared.Next(choices.Count);
+            Choice computerChoice = choices[Random.Shared.Next(choices.Count)];
 
             Console.WriteLine($"\nYou chose {playerChoice} and the computer chose {computerChoice}");
 
